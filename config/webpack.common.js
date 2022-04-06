@@ -8,8 +8,8 @@ const HtmlWebpackDeployPlugin = require("html-webpack-deploy-plugin")
 
 module.exports = {
     entry: {
-        app: path.resolve("src", "index.js"),
-        preload: path.resolve("src", "preload.js"),
+        app: path.resolve("../", "src", "index.js"),
+        preload: path.resolve("../", "src", "preload.js"),
     },
     target: "browserslist",
     output: {

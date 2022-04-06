@@ -1,7 +1,9 @@
 exports.command = 'build'
 exports.desc = 'Builds project.'
-
 exports.handler = function (argv) {
+    if ( !argv.url ) {
+        throw (`Provide an URL to get screenshot.`);
+    }
 
 const webpack = require('webpack');
 const chalk = require("chalk")

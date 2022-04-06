@@ -13,8 +13,8 @@ module.exports = merge(common, {
     mode: "production",
     devtool: false,
     entry: {
-        preload: path.resolve("src", "preload.js"),
-        app: path.resolve("src", "index.js"),
+        preload: path.resolve("../", "src", "preload.js"),
+        app: path.resolve("../", "src", "index.js"),
     },
     devServer: {
         hot: true,

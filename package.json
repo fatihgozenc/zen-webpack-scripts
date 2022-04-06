@@ -4,21 +4,20 @@
     "main": "index.js",
     "author": "Fatih Gozenc <fatihgozenc@gmail.com>",
     "license": "MIT",
-    "scripts": {
-        "build": "node scripts/build",
-        "dev": "node scripts/dev",
-        "local": "node scripts/local",
-        "analyze": "node scripts/build --analyze",
+    "bin": {
+        "build": "node bin/build",
+        "dev": "node bin/dev",
+        "local": "node bin/local",
+        "analyze": "node bin/build --analyze",
         "open": "node node_modules/.bin/open-cli"
     },
     "dependencies": {
-        "@babel/runtime": "^7.15.4",
-        "preact": "^10.5.14",
         "@babel/core": "^7.15.5",
         "@babel/plugin-transform-runtime": "^7.15.0",
         "@babel/preset-env": "^7.15.6",
         "@babel/preset-react": "^7.14.5",
         "@babel/register": "^7.16.5",
+        "@babel/runtime": "^7.15.4",
         "babel-loader": "^8.2.2",
         "chalk": "^4.1.2",
         "copy-webpack-plugin": "^9.0.1",
@@ -35,6 +34,7 @@
         "javascript-obfuscator": "^3.1.0",
         "mini-css-extract-plugin": "^2.3.0",
         "open-cli": "^7.0.1",
+        "preact": "^10.5.14",
         "pretty-bytes": "^5.6.0",
         "react": "^18.0.0",
         "react-dom": "^18.0.0",
@@ -49,7 +49,8 @@
         "webpack-manifest-plugin": "^4.0.2",
         "webpack-merge": "^5.8.0",
         "webpack-obfuscator": "^3.5.0",
-        "workbox-webpack-plugin": "^6.4.2"
+        "workbox-webpack-plugin": "^6.4.2",
+        "yargs": "^17.4.0"
     },
     "browserslist": "edge >= 13, firefox >= 50, and_ff >= 50, chrome >= 49, and_chr >= 49, ios >= 9.4, safari >= 9.4, samsung >= 5, and_uc >= 11.8, opera >= 40, op_mob >= 40, baidu >= 7"
 }
