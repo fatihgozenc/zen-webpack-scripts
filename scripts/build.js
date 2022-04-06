@@ -1,10 +1,3 @@
-exports.command = 'build'
-exports.desc = 'Builds project.'
-exports.handler = function (argv) {
-    if ( !argv.url ) {
-        throw (`Provide an URL to get screenshot.`);
-    }
-
 const webpack = require('webpack');
 const chalk = require("chalk")
 const prodConfig = require("../config/webpack.prod");
@@ -75,5 +68,3 @@ compiler.run(async (err, stats) => {
     process.stdout.write(`\n`);
     process.stdout.write(`Total size ${prettyBytes(totalSize)}\n\n`);
 })
-
-}

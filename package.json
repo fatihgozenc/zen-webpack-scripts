@@ -4,11 +4,19 @@
     "main": "index.js",
     "author": "Fatih Gozenc <fatihgozenc@gmail.com>",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fatihgozenc/zen-webpack-scripts.git",
+        "directory": "packages/zen-react-scripts"
+    },
     "bin": {
-        "build": "node bin/build",
-        "dev": "node bin/dev",
-        "local": "node bin/local",
-        "analyze": "node bin/build --analyze",
+        "zen-react-scripts": "./bin/zen-react-scripts.js"
+    },
+    "scripts": {
+        "build": "node scripts/build",
+        "dev": "node scripts/dev",
+        "local": "node scripts/local",
+        "analyze": "node scripts/build --analyze",
         "open": "node node_modules/.bin/open-cli"
     },
     "dependencies": {
@@ -49,8 +57,7 @@
         "webpack-manifest-plugin": "^4.0.2",
         "webpack-merge": "^5.8.0",
         "webpack-obfuscator": "^3.5.0",
-        "workbox-webpack-plugin": "^6.4.2",
-        "yargs": "^17.4.0"
+        "workbox-webpack-plugin": "^6.4.2"
     },
     "browserslist": "edge >= 13, firefox >= 50, and_ff >= 50, chrome >= 49, and_chr >= 49, ios >= 9.4, safari >= 9.4, samsung >= 5, and_uc >= 11.8, opera >= 40, op_mob >= 40, baidu >= 7"
 }
