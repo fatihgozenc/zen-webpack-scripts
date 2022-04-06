@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const webpack = require('webpack');
 const chalk = require("chalk")
 const prodConfig = require("../config/webpack.prod");
