@@ -4,10 +4,6 @@
     "main": "index.js",
     "author": "Fatih Gozenc <fatihgozenc@gmail.com>",
     "license": "MIT",
-    "dependencies": {
-        "@babel/runtime": "^7.15.4",
-        "preact": "^10.5.14"
-    },
     "scripts": {
         "build": "node scripts/build",
         "dev": "node scripts/dev",
@@ -15,7 +11,9 @@
         "analyze": "node scripts/build --analyze",
         "open": "node node_modules/.bin/open-cli"
     },
-    "devDependencies": {
+    "dependencies": {
+        "@babel/runtime": "^7.15.4",
+        "preact": "^10.5.14",
         "@babel/core": "^7.15.5",
         "@babel/plugin-transform-runtime": "^7.15.0",
         "@babel/preset-env": "^7.15.6",
