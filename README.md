@@ -1,0 +1,1 @@
+Webpack React builder and dev scripts constantly updated for package warnings, will support typescript.
