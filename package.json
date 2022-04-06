@@ -1,7 +1,6 @@
 {
     "name": "zen-react-scripts",
     "version": "0.0.1",
-    "main": "index.js",
     "author": "Fatih Gozenc <fatihgozenc@gmail.com>",
     "license": "MIT",
     "repository": {
@@ -9,9 +8,15 @@
         "url": "https://github.com/fatihgozenc/zen-webpack-scripts.git",
         "directory": "packages/zen-react-scripts"
     },
+    "engines": {
+        "node": ">=14.0.0"
+      },
     "bin": {
         "zen-react-scripts": "./bin/zen-react-scripts.js"
     },
+    "bugs": {
+        "url": "https://github.com/fatihgozenc/zen-webpack-scripts/issues"
+      },
     "scripts": {
         "build": "node scripts/build",
         "dev": "node scripts/dev",
